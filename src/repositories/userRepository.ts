@@ -4,7 +4,7 @@ import Client from "../entities/client";
 import UserModel from "../models/usermodel";
 import TrainerModel from "../models/trainermodel";
 import ClientModel from "../models/clientmodel";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { UserRepositoryInterface } from "../interfaces/userinterface";
 import { ObjectId } from "mongoose";
 interface UserObject {

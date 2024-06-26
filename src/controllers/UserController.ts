@@ -4,7 +4,7 @@ import User from "../entities/user";
 import Trainer from "../entities/trainer";
 import { CreateUserUseCaseImpl } from "../usecases/CreateUserUseCase";
 import { request } from "https";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { UserControllerinterface } from "../interfaces/userinterface";
 import * as jwt from "jsonwebtoken";
 import { generateAccessToken } from "../jwt/generateToken";

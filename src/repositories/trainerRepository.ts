@@ -8,7 +8,7 @@ import TrainerModel from "../models/trainermodel";
 import { Console, error } from "console";
 import { workerData } from "worker_threads";
 import UserModel from "../models/usermodel";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import User from "../entities/user";
 import Trainer from "../entities/trainer";
 import Client from "../entities/client";

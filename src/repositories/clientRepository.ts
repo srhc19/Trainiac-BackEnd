@@ -2,7 +2,7 @@ import { clientRepositoryInterface } from "../interfaces/clientInterface";
 import ClientModel from "../models/clientmodel";
 import TrainerModel from "../models/trainermodel";
 import UserModel from "../models/usermodel";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import User from "../entities/user";
 import Trainer from "../entities/trainer";
 import Client from "../entities/client";
