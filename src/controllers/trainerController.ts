@@ -337,6 +337,7 @@ class TrainerControllerImpl implements TrainerControllerInterface {
     }
 
     try {
+      console.log(email);
       let user = await this.trainerUseCase.checkemailexists(email);
       console.log(user, "user");
       if (user) {

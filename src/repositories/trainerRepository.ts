@@ -59,8 +59,9 @@ export default class TrainerRepositoryImpl
   }
   async checkemailexists(email: string) {
     try {
+      console.log(email, "repo");
       let user = await UserModel.findOne({ email });
-
+      console.log(user);
       if (user && user.isVerified) {
         return true;
       }

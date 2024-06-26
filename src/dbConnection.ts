@@ -1,8 +1,9 @@
 import mongoose from "mongoose";
-
+import dotenv from "dotenv";
+dotenv.config();
 export async function connectToDatabase(): Promise<typeof mongoose> {
   try {
-    await mongoose.connect("mongodb://localhost:27017/Trainiac");
+    await mongoose.connect(process.env.mongodb as string);
     console.log("Connected to MongoDB");
     return mongoose;
   } catch (error) {
