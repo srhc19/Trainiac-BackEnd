@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import Trainer from "../entities/trainer";
-import VedioSession from "../entities/VedioSession";
+import VedioSession from "../entities/vedioSession";
 import { ObjectId } from "mongoose";
 import { promises } from "dns";
 import Client from "../entities/client";

@@ -20,6 +20,7 @@ class User {
     isAdmin: boolean,
     isblocked: boolean,
     otpExpirationTime: Date,
+    isVerified: boolean,
     otp: number,
     id?: ObjectId
   ) {
@@ -27,6 +28,7 @@ class User {
     this.password = password;
     this.role = role;
     this.email = email;
+    this.isVerified = isVerified;
     this.isAdmin = isAdmin;
     this.isblocked = isblocked;
     this.otpExpirationTime = otpExpirationTime;

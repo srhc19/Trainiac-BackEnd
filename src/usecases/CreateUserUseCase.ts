@@ -2,7 +2,7 @@ import { PassThrough } from "stream";
 import User from "../entities/user";
 import Trainer from "../entities/trainer";
 
-import UserRepositoryImpl from "../repositories/UserRepository";
+import UserRepositoryImpl from "../repositories/userRepository";
 import { ObjectId } from "mongoose";
 import { promises } from "dns";
 import Client from "../entities/client";

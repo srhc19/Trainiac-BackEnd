@@ -1,10 +1,10 @@
 import express from "express";
 import { UserControllerImpl } from "../controllers/UserController";
 import { CreateUserUseCaseImpl } from "../usecases/CreateUserUseCase";
-import UserRepositoryImpl from "../repositories/UserRepository";
+import UserRepositoryImpl from "../repositories/userRepository";
 import { verifyToken } from "../jwt/verifyToken";
 import adminRepositoryImpl from "../repositories/adminRepository";
-import { adminUseCaseImpl } from "../usecases/AdminUseCase";
+import { adminUseCaseImpl } from "../usecases/adminUseCase";
 import { adminControllerImpl } from "../controllers/adminController";
 import dataRepositoryImp from "../repositories/dataRepository";
 import { dataUseCaseImpl } from "../usecases/dataUseCases";

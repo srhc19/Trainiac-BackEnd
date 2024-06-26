@@ -3,7 +3,7 @@ import { Blog } from "./chatInterface";
 import { BlogList, session1 } from "./adminInterface";
 import Client from "../entities/client";
 import Trainer from "../entities/trainer";
-import VedioSession from "../entities/VedioSession";
+import VedioSession from "../entities/vedioSession";
 import User from "../entities/user";
 import { ObjectId } from "mongoose";
 

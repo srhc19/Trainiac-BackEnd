@@ -29,6 +29,7 @@ class Client {
     profileimage: string,
     bannerImages: string,
     Bio: string,
+    requestSended: clientrequest[],
     followers: Array<String>,
     messages: Array<String>,
     workoutRoutines: any,
@@ -43,6 +44,7 @@ class Client {
     this.description = description;
     this.name = name;
     this.email = email;
+    this.requestSended = requestSended;
     this.profileimage = profileimage;
     this.bannerImage = bannerImages;
     this.Bio = Bio;

@@ -9,7 +9,7 @@ import Client from "../entities/client";
 import { ObjectId } from "mongoose";
 import ChatModel from "../models/chatmodel";
 import { Chat } from "../interfaces/userinterface";
-import VedioSession from "../entities/VedioSession";
+import VedioSession from "../entities/vedioSession";
 import SessionModel from "../models/sessionmodel";
 export default class clientRepositoryImp implements clientRepositoryInterface {
   // async trainerlist(skip:number,limit:number): Promise<any> {

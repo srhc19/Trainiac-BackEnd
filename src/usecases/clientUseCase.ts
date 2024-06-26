@@ -5,7 +5,7 @@ import User from "../entities/user";
 import Client from "../entities/client";
 import { ObjectId } from "mongoose";
 import Trainer from "../entities/trainer";
-import VedioSession from "../entities/VedioSession";
+import VedioSession from "../entities/vedioSession";
 
 class clientUseCaseImpl implements clientUseCaseInterface {
   constructor(private clientRepository: clientRepositoryImp) {}

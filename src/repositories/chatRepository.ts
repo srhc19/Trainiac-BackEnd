@@ -1,5 +1,5 @@
 import { ObjectId, Schema } from "mongoose";
-import VedioSession from "../entities/VedioSession";
+import VedioSession from "../entities/vedioSession";
 import Client from "../entities/client";
 import Trainer from "../entities/trainer";
 import {

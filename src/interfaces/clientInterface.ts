@@ -4,7 +4,7 @@ import Client from "../entities/client";
 import User from "../entities/user";
 import Trainer from "../entities/trainer";
 import { Chat } from "./userinterface";
-import VedioSession from "../entities/VedioSession";
+import VedioSession from "../entities/vedioSession";
 
 export interface clientcontrollerInterface {
   updateClientProfile(req: Request, res: Response): void;

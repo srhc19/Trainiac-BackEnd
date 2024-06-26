@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { adminUseCaseImpl } from "../usecases/AdminUseCase";
+import { adminUseCaseImpl } from "../usecases/adminUseCase";
 import * as nodemailer from "nodemailer";
 import cloudinary from "../helper/cloudinary";
 import { promisify } from "util";

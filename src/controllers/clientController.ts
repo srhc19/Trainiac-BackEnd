@@ -9,7 +9,7 @@ import {
   generateAccessToken,
   generateRefreshToken,
 } from "../jwt/generateToken";
-import { ObjectId, Promise } from "mongoose";
+import { ObjectId } from "mongoose";
 import { promises } from "dns";
 import ChatModel from "../models/chatmodel";
 import dotenv from "dotenv";

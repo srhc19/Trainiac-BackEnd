@@ -17,7 +17,7 @@ import ChatRepositoryImpl from "../repositories/chatRepository";
 import { chatUseCaseImpl } from "../usecases/chatUseCase";
 import { ChatControllerImpl } from "../controllers/chatController";
 import adminRepositoryImpl from "../repositories/adminRepository";
-import { adminUseCaseImpl } from "../usecases/AdminUseCase";
+import { adminUseCaseImpl } from "../usecases/adminUseCase";
 import { adminControllerImpl } from "../controllers/adminController";
 import dataRepositoryImp from "../repositories/dataRepository";
 import { dataUseCaseImpl } from "../usecases/dataUseCases";

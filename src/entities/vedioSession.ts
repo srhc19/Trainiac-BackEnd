@@ -19,6 +19,7 @@ class VedioSession {
     this.trainerId = trainerId;
     this.clientsId = clientsId;
     this.startedAt = startedAt;
+    this.currentDate = currentDate;
     this.endedAt = endedAt;
     this.randomId = randomId;
   }
