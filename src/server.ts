@@ -1,12 +1,12 @@
 import express, { Application } from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
-import userRouter from "./src/routes/UserRoutes";
-import clientRouter from "./src/routes/clientRoutes";
-import { connectToDatabase } from "./src/dbConnection";
+import userRouter from "./routes/UserRoutes";
+import clientRouter from "./routes/clientRoutes";
+import { connectToDatabase } from "./dbConnection";
 import mongoose from "mongoose";
-import trainerRouter from "./src/routes/trainerRoutes";
-import { createSocketServer } from "./src/helper/socket";
+import trainerRouter from "./routes/trainerRoutes";
+import { createSocketServer } from "./helper/socket";
 import http from "http";
 const app = express();
 app.use(bodyParser.json());
