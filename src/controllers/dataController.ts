@@ -616,5 +616,36 @@ class dataControllerImpl implements dataController {
       return;
     }
   }
+
+  async getMessageSearchResult(req: Request, res: Response) {
+    try {
+      const { text } = req.body;
+      console.log(
+        text,
+        "///////////////////////////////////////////////////////////////////"
+      );
+      if (text) {
+        const userdata = await this.dataUseCase.finduser(text);
+        console.log(
+          userdata,
+          "////////////////////////////////////////////////"
+        );
+
+        // let val = {
+        //   name: list.name,
+        //   _id: list._id,
+        //   email: list.email,
+        //   bio: list.Bio,
+        //   profileimage: list.profileimage,
+        // };
+      }
+    } catch (error) {
+      res.status(500).json({
+        message:
+          "Server Error has occurred. Please refresh the page and try again,",
+      });
+      return;
+    }
+  }
 }
 export { dataControllerImpl };

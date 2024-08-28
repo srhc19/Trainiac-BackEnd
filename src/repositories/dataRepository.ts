@@ -529,4 +529,25 @@ export default class dataRepositoryImp implements dataRepository {
       return false;
     }
   }
+  async finduser(text: string): Promise<Client | Trainer | null> {
+    try {
+      const user = await UserModel.findOne({
+        name: { $regex: text, $options: "i" },
+      });
+      console.log(user, "finduser");
+      if (user) {
+        if (user.role === "Client") {
+          const data = await ClientModel.findOne({ user_id: user._id });
+          return data;
+        } else {
+          const data = await TrainerModel.findOne({ user_id: user._id });
+          return data;
+        }
+      }
+      return null;
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  }
 }

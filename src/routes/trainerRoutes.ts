@@ -208,4 +208,8 @@ trainerRouter.post("/messageReciversImg", verifyToken, async (req, res) => {
 trainerRouter.post("/addMessageList", verifyToken, async (req, res) => {
   await dataController.addMessageList(req, res);
 });
+
+trainerRouter.post("/getMessageSearchResult", verifyToken, async (req, res) => {
+  await dataController.getMessageSearchResult(req, res);
+});
 export default trainerRouter;

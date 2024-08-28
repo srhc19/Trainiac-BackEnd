@@ -467,7 +467,7 @@ class TrainerControllerImpl implements TrainerControllerInterface {
 
   async getChatList(req: Request, res: Response): Promise<void> {
     try {
-      console.log("getchatlist in controller ...................", req.body);
+      
       const { user_id } = req.body;
 
       const getcurrentuser = await this.trainerUseCase.trainerDetails(user_id);

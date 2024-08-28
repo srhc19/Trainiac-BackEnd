@@ -116,5 +116,8 @@ class dataUseCaseImpl implements dataUseCases {
   async isUserAdmin(user_id: string): Promise<boolean> {
     return await this.dataRepository.isUserAdmin(user_id);
   }
+  async finduser(text: string): Promise<Client | Trainer | null> {
+    return await this.dataRepository.finduser(text);
+  }
 }
 export { dataUseCaseImpl };

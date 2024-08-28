@@ -53,11 +53,14 @@ class UserControllerImpl implements UserControllerinterface {
     const secretKey = process.env.Capcha_Secret;
     const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${captcha}`;
     const response = await axios.post(verifyUrl);
-    if (!response.data.success) {
-      res
-        .status(400)
-        .json({ success: false, message: "CAPTCHA verification failed." });
-    }
+    // console.log(response, "response of capche");
+    // if (!response.data.success) {
+    //   console.log("?capche error");
+    //   res
+    //     .status(400)
+    //     .json({ success: false, message: "CAPTCHA verification failed." });
+    //   return;
+    // }
 
     const otp = Math.floor(1000 + Math.random() * 9000);
     await this.sendOTPEmail(email, otp);
